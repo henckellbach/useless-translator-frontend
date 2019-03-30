@@ -1,0 +1,32 @@
+.input-strip {
+    padding: 25px;
+    border-bottom: 2px solid $grey-medium;
+    background-color: $grey-light;
+
+    &__inner {
+        max-width: $content-max-width;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
+
+    &__controls {
+        margin-top: 25px;
+    }
+
+    &__help {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+        color: $blue;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

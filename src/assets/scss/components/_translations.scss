@@ -1,0 +1,62 @@
+.translations {
+    $s: &;
+
+    padding: 15px 25px;
+    
+    &__list {
+        max-width: $content-max-width;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &__item {
+        list-style-type: none;
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid $grey-medium;
+
+        &:last-child {
+            border-bottom-width: 2px;
+        }
+
+        &:nth-child(odd) {
+            #{$s}__text {
+                color: $grey-dark;
+            }       
+        }
+    }
+
+    &__meta {
+        color: $grey;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        margin-top: 0.25em;
+    }
+
+    &__text-transliterated {
+        color: $grey;
+        margin-left: 1em;
+        font-size: 0.8em;
+
+        &:before {
+            content: "(";
+        }
+
+        &:after {
+            content: ")";
+        }
+
+        &:empty {
+            display: none;
+        }
+    }
+
+    &__loader {
+        margin-top: 25px;
+        text-align: center;
+    }
+}
